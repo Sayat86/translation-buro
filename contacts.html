@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Бюро переводов</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__row">
+      <a class="logo" href="index.html">Бюро переводов</a>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link" href="index.html">Главная</a>
+        <a class="nav__link" href="services.html">Услуги</a>
+        <a class="nav__link" href="prices.html">Цены</a>
+        <a class="nav__link" href="about.html">О нас</a>
+        <a class="nav__link" href="advantages.html">Преимущества</a>
+        <a class="nav__link active" href="contacts.html">Контакты</a>
+      </nav>
+
+      <a class="btn" href="contacts.html">Связаться</a>
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+  ☰
+</button>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="section">
+    <div class="container">
+      <h1 class="section__title">Контакты</h1>
+      <p style="margin-bottom: 18px; opacity: 0.85;">
+        Напишите нам в WhatsApp — это самый быстрый способ. Также можно позвонить или отправить письмо.
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Левая колонка -->
+        <section class="card">
+          <h2 class="card__title">Связаться с нами</h2>
+
+          <div class="contact-actions">
+            <a class="btn btn--primary"
+               href="https://wa.me/77001234567?text=Здравствуйте!%20Хочу%20заказать%20перевод.%20Проконсультируйте,%20пожалуйста."
+               target="_blank" rel="noopener">
+              Написать в WhatsApp
+            </a>
+
+            <a class="btn"
+               href="tel:+77001234567">
+              Позвонить
+            </a>
+
+            <a class="btn btn--ghost"
+               href="mailto:info@example.com?subject=Заявка%20на%20перевод&body=Здравствуйте!%0AНужен%20перевод:%20...">
+              Написать на email
+            </a>
+          </div>
+
+          <hr class="hr">
+
+          <div class="info">
+            <div class="info__row">
+              <div class="info__label">Телефон</div>
+              <div class="info__value"><a href="tel:+77001234567">+7 (700) 123-45-67</a></div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__label">WhatsApp</div>
+              <div class="info__value"><a target="_blank" rel="noopener"
+                href="https://wa.me/77001234567?text=Здравствуйте!%20Нужен%20перевод.">wa.me/77001234567</a></div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__label">Email</div>
+              <div class="info__value"><a href="mailto:info@example.com">info@example.com</a></div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__label">Адрес</div>
+              <div class="info__value">Ваш город, улица, дом (заменишь)</div>
+            </div>
+
+            <div class="info__row">
+              <div class="info__label">График</div>
+              <div class="info__value">Пн–Сб: 09:00–19:00 • Вс: выходной</div>
+            </div>
+          </div>
+
+          <p class="muted" style="margin-top: 12px;">
+            Можно отправить фото/скан документа — мы сразу скажем стоимость и сроки.
+          </p>
+        </section>
+
+        <!-- Правая колонка (форма) -->
+        <section class="card">
+          <h2 class="card__title">Оставить заявку</h2>
+          <p class="muted" style="margin-top: -4px; margin-bottom: 12px;">
+            Заполните форму — мы свяжемся с вами. (Отправка “без сервера”: показываем сообщение “Спасибо”.)
+          </p>
+
+          <form id="contactForm" class="form">
+            <label class="field">
+              <span class="field__label">Имя</span>
+              <input class="field__input" type="text" name="name" placeholder="Например: Айгерим" required>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Телефон / WhatsApp</span>
+              <input class="field__input" type="tel" name="phone" placeholder="+7 700 000 00 00" required>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Какая услуга нужна?</span>
+              <select class="field__input" name="service" required>
+                <option value="">Выберите...</option>
+                <option>Нотариальный перевод</option>
+                <option>Письменный перевод</option>
+                <option>Устный перевод</option>
+                <option>Апостиль</option>
+                <option>Нострификация</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Комментарий</span>
+              <textarea class="field__input" name="message" rows="4"
+                placeholder="Например: перевод паспорта на английский, срочно"></textarea>
+            </label>
+
+            <button class="btn btn--primary w100" type="submit">Отправить</button>
+
+            <div id="formSuccess" class="success" style="display:none;">
+              ✅ Спасибо! Заявка принята. Мы свяжемся с вами в ближайшее время.
+            </div>
+          </form>
+
+          <hr class="hr">
+
+          <div class="muted">
+            Хотите быстрее? Нажмите “Написать в WhatsApp” — и сразу прикрепите документ.
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__row">
+      <div>
+        <div class="footer__title">Бюро переводов</div>
+        <div class="footer__text">
+          Нотариальный • Письменный • Устный • Апостиль • Нострификация
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <a href="services.html">Услуги</a>
+        <a href="prices.html">Цены</a>
+        <a href="contacts.html">Контакты</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a class="wa-float"
+     href="https://wa.me/77001234567?text=Здравствуйте!%20Нужен%20перевод.%20Проконсультируйте,%20пожалуйста."
+     target="_blank" rel="noopener">
+    WhatsApp
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
