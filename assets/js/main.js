@@ -1,69 +1,82 @@
-// Простая "отправка" формы без сервера: показываем сообщение об успехе
 document.addEventListener("DOMContentLoaded", () => {
+
+  /* ==============================
+     CONTACT FORM (без сервера)
+  ============================== */
+
   const form = document.getElementById("contactForm");
   const success = document.getElementById("formSuccess");
 
-  if (!form || !success) return;
+  if (form && success) {
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
 
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
+      form.reset();
+      success.style.display = "block";
 
-    // здесь можно позже сделать реальную отправку на сервер/телеграм-бота
-    form.reset();
-    success.style.display = "block";
+      setTimeout(() => {
+        success.style.display = "none";
+      }, 5000);
+    });
+  }
 
-    // спрячем сообщение через 6 секунд
-    setTimeout(() => {
-      success.style.display = "none";
-    }, 6000);
-  });
-});
 
-// Бургер-меню (для мобильных)
-document.addEventListener("DOMContentLoaded", () => {
+  /* ==============================
+     BURGER MENU
+  ============================== */
+
   const burger = document.getElementById("burger");
   const nav = document.getElementById("nav");
 
-  if (!burger || !nav) return;
+  if (burger && nav) {
+    burger.addEventListener("click", () => {
+      nav.classList.toggle("open");
 
-  burger.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    burger.setAttribute("aria-expanded", String(isOpen));
-    burger.textContent = isOpen ? "✕" : "☰";
-  });
-
-  // закрывать меню при клике по ссылке
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      burger.setAttribute("aria-expanded", "false");
-      burger.textContent = "☰";
+      const isOpen = nav.classList.contains("open");
+      burger.setAttribute("aria-expanded", isOpen);
+      burger.textContent = isOpen ? "✕" : "☰";
     });
-  });
-});
+
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        burger.setAttribute("aria-expanded", "false");
+        burger.textContent = "☰";
+      });
+    });
+  }
 
 
-// FAQ аккордеон
-document.addEventListener("DOMContentLoaded", () => {
-  const questions = document.querySelectorAll(".faq__q");
+  /* ==============================
+     FAQ ACCORDION
+  ============================== */
 
-  if (!questions.length) return;
+  const faqButtons = document.querySelectorAll(".faq__q");
 
-  questions.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      // закрываем все остальные (чтобы открывался только один)
-      questions.forEach((b) => {
-        if (b !== btn) {
-          b.classList.remove("faq__item-open");
-          const icon = b.querySelector(".faq__icon");
+  if (faqButtons.length) {
+    faqButtons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+
+        const item = btn.closest(".faq__item");
+        if (!item) return;
+
+        const isOpen = item.classList.contains("open");
+
+        // Закрыть все
+        document.querySelectorAll(".faq__item").forEach((el) => {
+          el.classList.remove("open");
+          const icon = el.querySelector(".faq__icon");
           if (icon) icon.textContent = "+";
+        });
+
+        // Открыть текущий
+        if (!isOpen) {
+          item.classList.add("open");
+          const icon = item.querySelector(".faq__icon");
+          if (icon) icon.textContent = "–";
         }
       });
-
-      // переключаем текущий
-      const isOpen = btn.classList.toggle("faq__item-open");
-      const icon = btn.querySelector(".faq__icon");
-      if (icon) icon.textContent = isOpen ? "–" : "+";
     });
-  });
+  }
+
 });

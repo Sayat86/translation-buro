@@ -22,10 +22,9 @@
         <a class="nav__link" href="contacts.html">Контакты</a>
       </nav>
 
-      <a class="btn" href="contacts.html">Связаться</a>
-      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
-  ☰
-</button>
+      <a class="btn" href="tel:+77015637388">Позвонить</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">☰</button>
+
     </div>
   </header>
 
@@ -119,6 +118,21 @@
      target="_blank" rel="noopener">
     WhatsApp
   </a>
+
+  <script src="assets/js/main.js"></script>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      section.classList.add("visible");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
