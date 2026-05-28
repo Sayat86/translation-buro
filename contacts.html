@@ -1,217 +1,305 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Контакты — Бюро переводов в Астане</title>
-  <meta name="description" content="Бюро переводов в Астане. Нотариальный, письменный и устный перевод. Апостиль и нострификация. Звоните +7 701 563 73 88">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header class="header">
-  <div class="container header__row">
-    <a class="logo" href="index.html">Бюро переводов</a>
+    <title>Контакты | Aibaniz Translations</title>
 
-    <nav class="nav" id="nav">
-      <a class="nav__link" href="index.html">Главная</a>
-      <a class="nav__link" href="services.html">Услуги</a>
-      <a class="nav__link" href="prices.html">Цены</a>
-      <a class="nav__link" href="about.html">О нас</a>
-      <a class="nav__link" href="advantages.html">Преимущества</a>
-      <a class="nav__link active" href="contacts.html">Контакты</a>
-    </nav>
+    <meta
+      name="description"
+      content="Контакты Aibaniz Translations в Астане. Переводы документов, апостиль, нострификация, нотариальное заверение и легализация документов."
+    />
 
-    <a class="btn" href="tel:+77015637388">Позвонить</a>
-    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">☰</button>
-  </div>
-</header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<main class="section">
-  <div class="container">
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__row">
+        <a class="logo" href="index.html"> Aibaniz Translations </a>
 
-    <h1 class="section__title">Контакты</h1>
-    <p class="muted" style="margin-bottom:25px;">
-      Свяжитесь с нами удобным способом — отвечаем быстро. 
-      Можно отправить фото документа в WhatsApp для расчета стоимости.
-    </p>
+        <nav class="nav" id="nav">
+          <a class="nav__link" href="index.html"> Главная </a>
 
-    <div class="contact-grid">
+          <a class="nav__link" href="services.html"> Услуги </a>
 
-      <!-- ЛЕВАЯ КОЛОНКА -->
-      <section class="card">
+          <a class="nav__link" href="prices.html"> Цены </a>
 
-        <h2 class="card__title">Связаться напрямую</h2>
+          <a class="nav__link" href="about.html"> О нас </a>
 
-        <div class="contact-actions">
+          <a class="nav__link active" href="contacts.html"> Контакты </a>
+        </nav>
 
-          <a class="btn btn--primary"
-             href="https://wa.me/77015637388?text=Здравствуйте!%20Хочу%20заказать%20перевод."
-             target="_blank" rel="noopener">
-            Написать в WhatsApp
-          </a>
+        <div class="header-actions">
+          <a class="btn header-btn" href="tel:+77015637388"> Позвонить </a>
 
-          <a class="btn"
-             href="tel:+77015637388">
-            Позвонить
-          </a>
-
-          <a class="btn btn--ghost"
-             href="mailto:info@translation-astana.kz?subject=Заявка%20на%20перевод">
-            Написать на Email
-          </a>
-
-        </div>
-
-        <hr class="hr">
-
-        <div class="info">
-
-          <div class="info__row">
-            <div class="info__label">Телефон</div>
-            <div class="info__value">
-              <a href="tel:+77015637388">+7 701 563 73 88</a>
-            </div>
-          </div>
-
-          <div class="info__row">
-            <div class="info__label">WhatsApp</div>
-            <div class="info__value">
-              <a href="https://wa.me/77015637388" target="_blank">wa.me/77015637388</a>
-            </div>
-          </div>
-
-          <div class="info__row">
-            <div class="info__label">Город</div>
-            <div class="info__value">Астана, Республика Казахстан</div>
-          </div>
-
-          <div class="info__row">
-            <div class="info__label">График работы</div>
-            <div class="info__value">Пн–Сб: 09:00–19:00</div>
-          </div>
-
-        </div>
-
-        <p class="muted" style="margin-top:15px;">
-          Ответим в течение 5–15 минут в рабочее время.
-        </p>
-
-      </section>
-
-      <!-- ПРАВАЯ КОЛОНКА -->
-      <section class="card">
-
-        <h2 class="card__title">Оставить заявку</h2>
-        <p class="muted" style="margin-bottom:15px;">
-          Заполните форму — мы свяжемся с вами в ближайшее время.
-        </p>
-
-        <form id="contactForm" class="form">
-
-          <label class="field">
-            <span class="field__label">Имя</span>
-            <input class="field__input" type="text" name="name" required>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Телефон</span>
-            <input class="field__input" type="tel" name="phone" required>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Услуга</span>
-            <select class="field__input" name="service" required>
-              <option value="">Выберите услугу</option>
-              <option>Нотариальный перевод</option>
-              <option>Письменный перевод</option>
-              <option>Устный перевод</option>
-              <option>Апостиль</option>
-              <option>Нострификация</option>
-            </select>
-          </label>
-
-          <label class="field">
-            <span class="field__label">Комментарий</span>
-            <textarea class="field__input" name="message" rows="4"></textarea>
-          </label>
-
-          <button class="btn btn--primary w100" type="submit">
-            Отправить заявку
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            ☰
           </button>
+        </div>
+      </div>
+    </header>
 
-          <div id="formSuccess" class="success" style="display:none;">
-            Спасибо! Мы свяжемся с вами в ближайшее время.
-          </div>
+    <section class="page-hero dark-hero">
+      <div class="container">
+        <div class="hero-badge">Контакты • Консультация • WhatsApp</div>
 
-        </form>
+        <h1>Свяжитесь с нами</h1>
 
-      </section>
-
-    </div>
-
-    <!-- КАРТА -->
-    <section style="margin-top:50px;">
-      <h2 class="section__title" style="font-size:24px;">Мы на карте</h2>
-
-      <div style="margin-top:20px; border-radius:12px; overflow:hidden;">
-        <iframe 
-          src="https://www.google.com/maps?q=Астана&output=embed"
-          width="100%" 
-          height="400" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy">
-        </iframe>
+        <p class="hero-text">
+          Отправьте документы в WhatsApp — мы быстро рассчитаем стоимость и
+          сроки оформления
+        </p>
       </div>
     </section>
 
-  </div>
-</main>
+    <section class="contacts-main">
+      <div class="container">
+        <div class="contact-grid-modern">
+          <!-- LEFT -->
 
-<footer class="footer">
-  <div class="container footer__row">
+          <div class="contact-info-box">
+            <span class="section-subtitle"> Контактная информация </span>
 
-    <div>
-      <div class="footer__title">Бюро переводов</div>
-      <div class="footer__text">
-        Нотариальный • Письменный • Устный • Апостиль • Нострификация
+            <h2>Мы всегда на связи</h2>
+
+            <p class="contact-description">
+              Помогаем с переводами, апостилем, нострификацией и легализацией
+              документов для любых стран
+            </p>
+
+            <div class="contact-items">
+              <div class="contact-item-modern">
+                <div class="contact-icon">📞</div>
+
+                <div>
+                  <h3>Телефон</h3>
+
+                  <a href="tel:+77015637388"> +7 701 563 73 88 </a>
+                </div>
+              </div>
+
+              <div class="contact-item-modern">
+                <div class="contact-icon">💬</div>
+
+                <div>
+                  <h3>WhatsApp</h3>
+
+                  <a href="https://wa.me/87015637388" target="_blank">
+                    Написать в WhatsApp
+                  </a>
+                </div>
+              </div>
+
+              <div class="contact-item-modern">
+                <div class="contact-icon">📍</div>
+
+                <div>
+                  <h3>Город</h3>
+
+                  <p>Астана, Казахстан</p>
+                </div>
+              </div>
+
+              <div class="contact-item-modern">
+                <div class="contact-icon">⏰</div>
+
+                <div>
+                  <h3>График работы</h3>
+
+                  <p>Пн – Сб: 09:00 – 19:00</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-buttons">
+              <a
+                href="https://wa.me/87015637388"
+                target="_blank"
+                class="btn whatsapp"
+              >
+                WhatsApp
+              </a>
+
+              <a href="tel:+77015637388" class="btn btn-outline"> Позвонить </a>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+
+          <div class="contact-form-box">
+            <span class="section-subtitle"> Оставить заявку </span>
+
+            <h2>Бесплатная консультация</h2>
+
+            <p class="contact-description">
+              Заполните форму — мы свяжемся с вами в ближайшее время
+            </p>
+
+            <form class="modern-form">
+              <div class="form-group">
+                <label> Ваше имя </label>
+
+                <input type="text" placeholder="Введите имя" required />
+              </div>
+
+              <div class="form-group">
+                <label> Телефон </label>
+
+                <input type="tel" placeholder="+7 (___) ___-__-__" required />
+              </div>
+
+              <div class="form-group">
+                <label> Услуга </label>
+
+                <select required>
+                  <option value="">Выберите услугу</option>
+
+                  <option>Перевод документов</option>
+
+                  <option>Апостиль</option>
+
+                  <option>Нострификация</option>
+
+                  <option>Нотариальное заверение</option>
+
+                  <option>Легализация документов</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label> Комментарий </label>
+
+                <textarea rows="5" placeholder="Опишите ваш запрос"></textarea>
+              </div>
+
+              <button type="submit" class="btn submit-btn">
+                Отправить заявку
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="footer__links">
-      <a href="services.html">Услуги</a>
-      <a href="prices.html">Цены</a>
-      <a href="contacts.html">Контакты</a>
-    </div>
+    <section class="map-section">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-subtitle"> Наше расположение </span>
 
-    <div class="footer__links">
-      <a href="tel:+77015637388">+7 701 563 73 88</a>
-    </div>
+          <h2>Мы на карте</h2>
+        </div>
 
-  </div>
-</footer>
+        <div class="map-box">
+          <iframe
+            src="https://www.google.com/maps?q=Астана&output=embed"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
 
-<a class="wa-float"
-   href="https://wa.me/77015637388?text=Здравствуйте!%20Нужен%20перевод."
-   target="_blank">
-  WhatsApp
-</a>
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-subtitle"> Частые вопросы </span>
 
-<script src="assets/js/main.js"></script>
+          <h2>Что спрашивают клиенты</h2>
+        </div>
 
-<script>
-const sections = document.querySelectorAll("section");
+        <div class="cards">
+          <div class="card">
+            <h3>Можно отправить документы онлайн?</h3>
 
-window.addEventListener("scroll", () => {
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100){
-      section.classList.add("visible");
-    }
-  });
-});
-</script>
+            <p>
+              Да, вы можете отправить документы через WhatsApp для оценки
+              стоимости
+            </p>
+          </div>
 
-</body>
+          <div class="card">
+            <h3>Делаете срочные переводы?</h3>
+
+            <p>Да, выполняем срочные переводы и оформление документов</p>
+          </div>
+
+          <div class="card">
+            <h3>Помогаете с апостилем?</h3>
+
+            <p>
+              Да, оформляем апостиль и помогаем подготовить документы для
+              зарубежных стран
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box modern-cta">
+          <div>
+            <span class="section-subtitle"> Быстрая связь </span>
+
+            <h2>Отправьте документы прямо сейчас</h2>
+
+            <p>Мы ответим вам, рассчитаем стоимость и подскажем сроки</p>
+          </div>
+
+          <div class="cta-buttons">
+            <a
+              href="https://wa.me/87015637388"
+              target="_blank"
+              class="btn whatsapp"
+            >
+              WhatsApp
+            </a>
+
+            <a href="tel:+77015637388" class="btn btn-outline"> Позвонить </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Aibaniz Translations</h3>
+
+          <p>Переводы, апостиль, нострификация и легализация документов</p>
+        </div>
+
+        <div>© 2026 Aibaniz Translations</div>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/87015637388"
+      class="floating whatsapp-btn"
+      target="_blank"
+    >
+      💬
+    </a>
+
+    <a href="tel:+77015637388" class="floating call-btn"> 📞 </a>
+
+    <script src="assets/js/main.js"></script>
+
+  
+  </body>
 </html>

@@ -1,183 +1,354 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Услуги — Бюро переводов в Астане</title>
-  <meta name="description" content="Нотариальный, письменный и устный перевод в Астане. Апостиль и нострификация документов.">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<header class="header">
-  <div class="container header__row">
-    <a class="logo" href="index.html">Бюро переводов</a>
+    <title>Услуги | Aibaniz Translations</title>
 
-    <nav class="nav" id="nav">
-      <a class="nav__link" href="index.html">Главная</a>
-      <a class="nav__link active" href="services.html">Услуги</a>
-      <a class="nav__link" href="prices.html">Цены</a>
-      <a class="nav__link" href="about.html">О нас</a>
-      <a class="nav__link" href="advantages.html">Преимущества</a>
-      <a class="nav__link" href="contacts.html">Контакты</a>
-    </nav>
+    <meta
+      name="description"
+      content="Услуги Aibaniz Translations в Астане: переводы документов, апостиль, нострификация, легализация и нотариальное заверение."
+    />
 
-    <a class="btn" href="tel:+77015637388">Позвонить</a>
-    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">☰</button>
-  </div>
-</header>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-<section class="page-hero">
-  <div class="container">
-    <h1>Наши услуги</h1>
-    <p>Профессиональные переводы и оформление документов любой сложности</p>
-  </div>
-</section>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__row">
+        <a class="logo" href="index.html"> Aibaniz Translations </a>
 
-<section class="services-section">
-  <div class="container">
+        <nav class="nav" id="nav">
+          <a class="nav__link" href="index.html"> Главная </a>
 
-    <div class="cards">
+          <a class="nav__link active" href="services.html"> Услуги </a>
 
-      <div class="card">
-        <h3>Нотариальный перевод</h3>
-        <p>
-          Официальный перевод документов с нотариальным заверением
-          для государственных органов и зарубежных организаций.
+          <a class="nav__link" href="prices.html"> Цены </a>
+
+          <a class="nav__link" href="about.html"> О нас </a>
+
+          <a class="nav__link" href="contacts.html"> Контакты </a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn header-btn" href="tel:+77015637388"> Позвонить </a>
+
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="page-hero dark-hero">
+      <div class="container">
+        <div class="hero-badge">Переводы • Апостиль • Легализация</div>
+
+        <h1>Наши услуги</h1>
+
+        <p class="hero-text">
+          Полный комплекс услуг по международным документам, переводам и
+          оформлению документов для зарубежных стран
         </p>
-        <ul>
-          <li>Паспорта</li>
-          <li>Свидетельства</li>
-          <li>Договоры</li>
-          <li>Справки</li>
-        </ul>
-        <a href="https://wa.me/87015637388?text=Здравствуйте!%20Нужен%20нотариальный%20перевод." 
-           class="btn whatsapp w100" target="_blank">
-           Заказать
-        </a>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Письменный перевод</h3>
-        <p>
-          Перевод текстов любой тематики с сохранением терминологии
-          и структуры документа.
-        </p>
-        <ul>
-          <li>Юридические документы</li>
-          <li>Технические тексты</li>
-          <li>Медицинские справки</li>
-          <li>Личные документы</li>
-        </ul>
-        <a href="https://wa.me/87015637388?text=Здравствуйте!%20Нужен%20письменный%20перевод." 
-           class="btn whatsapp w100" target="_blank">
-           Заказать
-        </a>
+    <section class="services-main">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-subtitle"> Основные направления </span>
+
+          <h2>Чем мы занимаемся</h2>
+        </div>
+
+        <div class="services-grid">
+          <!-- CARD -->
+
+          <div class="service-card-large">
+            <div class="service-card-top">
+              <div class="service-icon">📄</div>
+
+              <div class="service-tag">Популярная услуга</div>
+            </div>
+
+            <h3>Перевод документов</h3>
+
+            <p>
+              Профессиональные переводы юридических, медицинских, технических и
+              личных документов
+            </p>
+
+            <ul class="service-list">
+              <li>Паспорта</li>
+              <li>Справки</li>
+              <li>Договоры</li>
+              <li>Дипломы</li>
+              <li>Медицинские документы</li>
+            </ul>
+
+            <a href="contacts.html" class="btn service-btn">
+              Заказать услугу
+            </a>
+          </div>
+
+          <!-- CARD -->
+
+          <div class="service-card-large featured-service">
+            <div class="service-card-top">
+              <div class="service-icon">✔️</div>
+
+              <div class="service-tag">Международные документы</div>
+            </div>
+
+            <h3>Апостиль</h3>
+
+            <p>Оформление апостиля для использования документов за границей</p>
+
+            <ul class="service-list">
+              <li>Дипломы</li>
+              <li>Свидетельства</li>
+              <li>Аттестаты</li>
+              <li>Справки</li>
+              <li>Нотариальные документы</li>
+            </ul>
+
+            <a href="apostille.html" class="btn whatsapp service-btn">
+              Подробнее
+            </a>
+          </div>
+
+          <!-- CARD -->
+
+          <div class="service-card-large">
+            <div class="service-card-top">
+              <div class="service-icon">🎓</div>
+
+              <div class="service-tag">Образование</div>
+            </div>
+
+            <h3>Нострификация</h3>
+
+            <p>Помощь с признанием дипломов и аттестатов для учебы и работы</p>
+
+            <ul class="service-list">
+              <li>Дипломы</li>
+              <li>Аттестаты</li>
+              <li>Приложения</li>
+              <li>Консультация</li>
+              <li>Сопровождение</li>
+            </ul>
+
+            <a href="nostrification.html" class="btn service-btn">
+              Подробнее
+            </a>
+          </div>
+
+          <!-- CARD -->
+
+          <div class="service-card-large">
+            <div class="service-card-top">
+              <div class="service-icon">🌍</div>
+
+              <div class="service-tag">Зарубежные страны</div>
+            </div>
+
+            <h3>Легализация документов</h3>
+
+            <p>
+              Подготовка документов для официального использования за пределами
+              Казахстана
+            </p>
+
+            <ul class="service-list">
+              <li>Справки</li>
+              <li>Свидетельства</li>
+              <li>Доверенности</li>
+              <li>Корпоративные документы</li>
+              <li>Дипломы</li>
+            </ul>
+
+            <a href="legalization.html" class="btn service-btn"> Подробнее </a>
+          </div>
+
+          <!-- CARD -->
+
+          <div class="service-card-large">
+            <div class="service-card-top">
+              <div class="service-icon">🖊️</div>
+
+              <div class="service-tag">Заверение документов</div>
+            </div>
+
+            <h3>Нотариальное заверение</h3>
+
+            <p>Заверение переводов, копий и официальных документов</p>
+
+            <ul class="service-list">
+              <li>Переводы</li>
+              <li>Копии документов</li>
+              <li>Нотариальные справки</li>
+              <li>Заверение подписей</li>
+            </ul>
+
+            <a href="contacts.html" class="btn service-btn"> Консультация </a>
+          </div>
+
+          <!-- CARD -->
+
+          <div class="service-card-large">
+            <div class="service-card-top">
+              <div class="service-icon">⚡</div>
+
+              <div class="service-tag">Срочные услуги</div>
+            </div>
+
+            <h3>Срочное оформление</h3>
+
+            <p>Срочные переводы, апостиль и оформление документов</p>
+
+            <ul class="service-list">
+              <li>Срочный перевод</li>
+              <li>Быстрая обработка</li>
+              <li>Приоритетное оформление</li>
+              <li>Экспресс-консультация</li>
+            </ul>
+
+            <a
+              href="https://wa.me/87015637388"
+              target="_blank"
+              class="btn whatsapp service-btn"
+            >
+              WhatsApp
+            </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Устный перевод</h3>
-        <p>
-          Профессиональное сопровождение переговоров, встреч
-          и онлайн-конференций.
-        </p>
-        <ul>
-          <li>Последовательный перевод</li>
-          <li>Деловые встречи</li>
-          <li>Переговоры</li>
-          <li>Онлайн-встречи</li>
-        </ul>
-        <a href="https://wa.me/87015637388?text=Здравствуйте!%20Нужен%20устный%20перевод." 
-           class="btn whatsapp w100" target="_blank">
-           Заказать
-        </a>
+    <section class="advantages">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-subtitle"> Почему выбирают нас </span>
+
+          <h2>Надежно и профессионально</h2>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">⭐</div>
+
+            <h3>Опыт более 5 лет</h3>
+
+            <p>Работаем с частными и корпоративными клиентами</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🔒</div>
+
+            <h3>Конфиденциальность</h3>
+
+            <p>Все документы обрабатываются конфиденциально</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">⚡</div>
+
+            <h3>Быстрые сроки</h3>
+
+            <p>Выполняем срочные переводы и оформление документов</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Апостиль</h3>
-        <p>
-          Оформление апостиля на документы для использования
-          за границей.
-        </p>
-        <ul>
-          <li>Свидетельства</li>
-          <li>Дипломы</li>
-          <li>Справки</li>
-          <li>Нотариальные документы</li>
-        </ul>
-        <a href="https://wa.me/87015637388?text=Здравствуйте!%20Нужен%20апостиль." 
-           class="btn whatsapp w100" target="_blank">
-           Заказать
-        </a>
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-top">
+          <span class="section-subtitle"> Частые вопросы </span>
+
+          <h2>Ответы на популярные вопросы</h2>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Можно отправить документы онлайн?</h3>
+
+            <p>Да, документы можно отправить через WhatsApp</p>
+          </div>
+
+          <div class="card">
+            <h3>Делаете срочные переводы?</h3>
+
+            <p>Да, выполняем срочные переводы и оформление</p>
+          </div>
+
+          <div class="card">
+            <h3>Помогаете с апостилем и легализацией?</h3>
+
+            <p>Да, сопровождаем оформление международных документов</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Нострификация</h3>
-        <p>
-          Признание иностранных дипломов и аттестатов
-          на территории Республики Казахстан.
-        </p>
-        <ul>
-          <li>Дипломы</li>
-          <li>Аттестаты</li>
-          <li>Приложения</li>
-          <li>Консультация</li>
-        </ul>
-        <a href="https://wa.me/87015637388?text=Здравствуйте!%20Нужна%20нострификация%20документов." 
-           class="btn whatsapp w100" target="_blank">
-           Заказать
-        </a>
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box modern-cta">
+          <div>
+            <span class="section-subtitle"> Бесплатная консультация </span>
+
+            <h2>Не знаете, какая услуга вам нужна?</h2>
+
+            <p>Напишите нам — мы подскажем, что необходимо сделать</p>
+          </div>
+
+          <div class="cta-buttons">
+            <a
+              href="https://wa.me/87015637388"
+              target="_blank"
+              class="btn whatsapp"
+            >
+              WhatsApp
+            </a>
+
+            <a href="tel:+77015637388" class="btn btn-outline"> Позвонить </a>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div>
+          <h3>Aibaniz Translations</h3>
 
-  </div>
-</section>
+          <p>Переводы, апостиль, нострификация и легализация документов</p>
+        </div>
 
-<section class="cta-section">
-  <div class="container cta-box">
-      <div>
-        <h2>Не уверены, какая услуга вам нужна?</h2>
-        <p>Напишите нам в WhatsApp — бесплатно проконсультируем.</p>
+        <div>© 2026 Aibaniz Translations</div>
       </div>
+    </footer>
 
-      <div class="cta-buttons">
-        <a href="https://wa.me/87015637388?text=Здравствуйте!%20Нужна%20консультация%20по%20переводу." 
-           class="btn whatsapp" target="_blank">
-           Написать в WhatsApp
-        </a>
+    <a
+      href="https://wa.me/87015637388"
+      class="floating whatsapp-btn"
+      target="_blank"
+    >
+      💬
+    </a>
 
-        <a href="tel:87015637388" class="btn">
-           Позвонить
-        </a>
-      </div>
-  </div>
-</section>
+    <a href="tel:+77015637388" class="floating call-btn"> 📞 </a>
 
-<footer class="footer">
-    <div class="container">
-        © 2026 Бюро переводов, Астана | Тел: 8 701 563 73 88
-    </div>
-</footer>
-
-<a href="https://wa.me/87015637388" class="floating whatsapp-btn" target="_blank">💬</a>
-<a href="tel:87015637388" class="floating call-btn">📞</a>
-
-<script src="assets/js/main.js"></script>
-
-<script>
-const sections = document.querySelectorAll("section");
-
-window.addEventListener("scroll", () => {
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
-    if(top < window.innerHeight - 100){
-      section.classList.add("visible");
-    }
-  });
-});
-</script>
-
-</body>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
